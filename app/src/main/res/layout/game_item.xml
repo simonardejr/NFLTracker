@@ -1,0 +1,148 @@
+<!--LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:paddingHorizontal="6dp"
+    android:layout_height="310dp"
+    -->
+
+        <androidx.cardview.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/card_view"
+            android:layout_gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            card_view:cardCornerRadius="6dp"
+            android:layout_margin="5dp"
+            card_view:contentPadding="10dp"
+            card_view:cardBackgroundColor="@color/white"
+            card_view:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                        <!-- homeTeam -->
+                        <LinearLayout
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:layout_gravity="center">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="60dp"
+                                    android:gravity="center|center_vertical"
+                                    android:src="@drawable/sea"
+                                    android:contentDescription=""
+                                    android:id="@+id/homeTeamImg" />
+
+                                <TextView
+                                    android:id="@+id/homeTeamTextView"
+                                    android:layout_width="match_parent"
+                                    android:gravity="center|center_vertical"
+                                    android:textStyle="normal"
+                                    android:layout_height="match_parent" />
+                        </LinearLayout>
+                        <!-- end homeTeam -->
+
+                        <!-- scores -->
+                        <LinearLayout
+                            android:layout_width="120dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="15dp"
+                            android:layout_marginLeft="10dp"
+                            android:orientation="vertical"
+                            >
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="40dp"
+                                    android:layout_gravity="center"
+                                    android:orientation="horizontal"
+                                    >
+
+                                        <TextView
+                                            android:id="@+id/homeTeamScoreTextView"
+                                            android:layout_width="50dp"
+                                            android:layout_height="match_parent"
+                                            android:gravity="right|center_vertical"
+                                            android:padding="5dp"
+                                            android:text="0"
+                                            android:textSize="26sp"
+                                            android:textStyle="normal" />
+
+                                        <TextView
+                                            android:id="@+id/versus"
+                                            android:layout_width="20dp"
+                                            android:layout_height="match_parent"
+                                            android:gravity="center_vertical"
+                                            android:paddingTop="10dp"
+                                            android:paddingRight="6dp"
+                                            android:paddingLeft="6dp"
+                                            android:paddingBottom="0dp"
+                                            android:text="X"
+                                            android:textStyle="normal" />
+
+                                        <TextView
+                                            android:id="@+id/awayTeamScoreTextView"
+                                            android:layout_width="50dp"
+                                            android:layout_height="match_parent"
+                                            android:gravity="left|center_vertical"
+                                            android:padding="5dp"
+                                            android:text="0"
+                                            android:textSize="26sp"
+                                            android:textStyle="normal" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center">
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                                android:text=""
+                                            android:id="@+id/dateTextView"
+                                            android:gravity="center"
+                                            />
+                                </LinearLayout>
+                        </LinearLayout>
+                        <!-- end scores -->
+
+                        <!-- awayTeam -->
+                        <LinearLayout
+                            android:layout_width="100dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="60dp"
+                                    android:gravity="center|center_vertical"
+                                    android:src="@drawable/sea"
+
+                                    android:contentDescription="Logo"
+                                    android:id="@+id/awayTeamImg" />
+
+                                <TextView
+                                    android:id="@+id/awayTeamTextView"
+                                    android:layout_width="match_parent"
+                                    android:gravity="center|center_vertical"
+                                    android:textStyle="normal"
+                                    android:text=""
+                                    android:layout_height="match_parent" />
+
+                        </LinearLayout>
+                        <!-- end awayTeam -->
+
+                </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+<!--/LinearLayout-->

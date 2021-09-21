@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/gray"
+    >
+
+    <data>
+        <variable
+            name="user"
+            type="com.example.aula1.model.User" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="12dp"
+        tools:context=".view.BindingActivity">
+
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{`Olá, ` + user.name}"
+            android:layout_margin="15dp"
+
+            android:gravity="right"
+            /><!--android:layout_centerHorizontal="true"-->
+
+        <TextView
+            android:id="@+id/userTeam"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_margin="15dp"
+            android:layout_toEndOf="@id/userName"
+            android:layout_alignParentEnd="true"
+            android:gravity="right"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/gameList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/userName" />
+
+    </RelativeLayout>
+
+</layout>

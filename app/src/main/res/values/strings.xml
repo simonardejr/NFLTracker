@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">NFL Tracker</string>
+    <string name="login_intro">Por favor, faça o login</string>
+    <string name="username_hint">Usuário</string>
+    <string name="password_hint">Senha</string>
+    <string name="submit_button">Enviar</string>
+</resources>

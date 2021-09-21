@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:background="@color/gray"
+    >
+
+    <androidx.cardview.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_gravity="top"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            card_view:cardCornerRadius="6dp"
+            android:layout_margin="15dp"
+            card_view:contentPadding="10dp"
+            card_view:cardBackgroundColor="@color/white"
+            card_view:cardElevation="4dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/gameId"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:layout_margin="5dp"
+                        android:gravity="left"
+                        />
+
+                    <TextView
+                        android:id="@+id/winner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:layout_margin="5dp"
+                        android:gravity="left"
+                        />
+
+                    <TextView
+                        android:id="@+id/userTeam"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:layout_gravity="center"
+                        android:layout_margin="5dp"
+                        android:textSize="18dp"
+                        android:gravity="center"
+                        />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:gravity="center|center_vertical"
+                        android:src="@drawable/sea"
+                        android:contentDescription="Logo"
+                        android:id="@+id/winnerLogo" />
+
+
+                </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</layout>
